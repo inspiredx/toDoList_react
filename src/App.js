@@ -12,10 +12,7 @@ import PostForm from "./components/PostForm";
 
 function App() {   
   const[posts, setPosts] = useState([
-    ]);
-
-
-  
+    ]); 
 
 
  
@@ -35,7 +32,7 @@ function App() {
     return (
     <div className="App">
      <PostForm create={createPost}/>
-     <PostList remove={removePost} posts={posts} title={"Posts about JS"}/>
+     <PostList remove={removePost} posts={posts} title={"Список задач"}/>
     </div>
   );
 }

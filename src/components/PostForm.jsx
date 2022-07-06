@@ -6,8 +6,7 @@ const PostForm = ({create}) => {
     const[post, setPost] = useState({title: '', body: ''});
 
     const addNewPost = (e) => {
-        e.preventDefault();    
-                
+        e.preventDefault();                 
         const newPost = {
             ...post, id: Date.now()
         }
@@ -21,7 +20,6 @@ const PostForm = ({create}) => {
 
     return (
         <form>
-        {/*Управляемый компонент*/}
         <MyInput 
         value = {post.title}
         onChange={e => setPost({...post, title: e.target.value})}
@@ -35,16 +33,6 @@ const PostForm = ({create}) => {
         type="text" 
         placeholder="Название поста">
         </MyInput>  
-       
-       
-       
-        {/* Хук useRef() Неуправляемый/Неконтроллируемый компонент
-        <MyInput
-        ref={bodyInputRef} 
-        type="text" 
-        placeholder="Описание поста"></MyInput> */}
-
-
         
         <MyButton onClick={addNewPost}>Создать пост</MyButton>
       </form>
