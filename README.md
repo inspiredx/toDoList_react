@@ -1,7 +1,7 @@
-toDoList на React
+toDoList React
 
 
-npm install - установка пакета
+npm install - install
 
 
-npm start - запуск
+npm start - start
